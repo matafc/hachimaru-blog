@@ -1,0 +1,9 @@
+# Site settings
+title: Hachimaru - A match 3 game
+email: matafc@yahoo.com
+baseurl: "/hachimaru-blog"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+github_username: matafc

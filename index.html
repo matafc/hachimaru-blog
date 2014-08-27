@@ -1,58 +1,18 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hachimaru-blog by matafc</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+---
+layout: default
+---
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/matafc/hachimaru-blog">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/matafc/hachimaru-blog/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/matafc/hachimaru-blog/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+<div class="home">
 
-    <div class="wrapper">
+  <h1>Posts</h1>
 
-      <section>
-        <div id="title">
-          <h1>Hachimaru-blog</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/matafc">matafc</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-        <h3>
-<a name="hachimaru---a-match-3-game" class="anchor" href="#hachimaru---a-match-3-game"><span class="octicon octicon-link"></span></a>Hachimaru - A match 3 game</h3>
-
-<p>Hachimaru is a twist on traditional match 3 games. Swipe left or right to move a whole row, or up or down to move a whole column. Gain points by matching 3 or more materials, and remember that matches wrap around!</p>
-
-<p>Coming soon for for android and ios. . .</p>
-
-<h3>
-<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h3>
-
-<p>Direct questions or suggestions to <a href="mailto:matafc@yahoo.com">matafc@yahoo.com</a></p>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-</html>
+</div>
