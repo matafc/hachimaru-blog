@@ -4,3 +4,5 @@ kivy-ios
 Gemfile*
 index.html
 _*
+css*
+*.html

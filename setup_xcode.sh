@@ -2,7 +2,6 @@
 
 set -e
 
-
 # start from scratch with iphonesimulator branch merged in
 rm -rf kivy-ios || true
 git clone git://github.com/kivy/kivy-ios
