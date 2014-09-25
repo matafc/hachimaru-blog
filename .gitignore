@@ -1,1 +1,6 @@
-_site
+env
+kivy-ios
+*.pyc
+Gemfile*
+index.html
+_*
