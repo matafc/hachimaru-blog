@@ -10,4 +10,11 @@ git checkout iphonesimulator
 git checkout master
 git merge iphonesimulator -m "merge iphonesimulator"
 
+# todo: remove this fix when libffi updates
+cd ..
+echo "Workaround for libffi simluator compilation on xcode 6.0+"
+cp -v workarounds/build-libffi.sh kivy-ios/tools/build-libffi.sh
+cp -v workarounds/generate-ios-source-and-headers.py kivy-ios/src/ffi_files/generate-ios-source-and-headers.py
+
+cd kivy-ios
 make all
