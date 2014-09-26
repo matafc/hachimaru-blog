@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Working with OSX 10.9.5, Xcode 6.1, iphonesimluator8.0
 set -e
 
 # start from scratch with iphonesimulator branch merged in
@@ -9,6 +9,9 @@ cd kivy-ios
 git checkout iphonesimulator
 git checkout master
 git merge iphonesimulator -m "merge iphonesimulator"
+
+# https://github.com/kivy/kivy-ios/issues/39 came back
+rm -v src/SDL/SDL
 
 # todo: remove this fix when libffi updates
 cd ..
