@@ -2,8 +2,10 @@
 # Working with OSX 10.9.5, Xcode 6.1, iphonesimluator8.0
 set -e
 
+META_PROJ_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )"/.. && pwd )"
+cd $META_PROJ_DIR
+
 # start from scratch with iphonesimulator branch merged in
-rm -rf kivy-ios || true
 git clone git://github.com/kivy/kivy-ios
 cd kivy-ios
 git checkout iphonesimulator
@@ -11,12 +13,12 @@ git checkout master
 git merge iphonesimulator -m "merge iphonesimulator"
 
 # https://github.com/kivy/kivy-ios/issues/39 came back
-rm -v src/SDL/SDL
+rm -v $META_PROJ_DIR/kivy-ios/src/SDL/SDL
 
 # todo: remove this fix when libffi updates
 cd ..
 echo "Workaround for libffi simluator compilation on xcode 6.0+"
-cp -v workarounds/build-libffi.sh kivy-ios/tools/build-libffi.sh
+cp -v $META_PROJ_DIR/scripts/workarounds/build-libffi.sh $META_PROJ_DIR/kivy-ios/tools/build-libffi.sh
 
-cd kivy-ios
+cd $META_PROJ_DIR/kivy-ios
 make all

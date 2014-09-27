@@ -1,7 +1,5 @@
-import kivy
-kivy.require('1.1.1')
 from kivy.app import App
-from sample_app.main_ui import MainUI
+from kivy_iad_sample.main_ui import MainUI
 
 class SampleApp(App):
 
