@@ -3,6 +3,6 @@ kivy-ios
 *.pyc
 Gemfile*
 index.html
-_*
+
 css*
 *.html
