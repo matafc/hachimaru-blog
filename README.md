@@ -1,7 +1,7 @@
 Hachimaru Blog
 ==============
 
-This website describes my experience with making the app hachimaru with kivy. The main branch contains sample code.
+This website describes my experience with making the app hachimaru with kivy. The main branch contains example code derived from the actual code I used in the app hachimaru.
 
 
 ## kivy-ios setup with ios simulator support
