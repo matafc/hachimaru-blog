@@ -17,7 +17,6 @@ rm -v src/SDL/SDL
 cd ..
 echo "Workaround for libffi simluator compilation on xcode 6.0+"
 cp -v workarounds/build-libffi.sh kivy-ios/tools/build-libffi.sh
-cp -v workarounds/generate-ios-source-and-headers.py kivy-ios/src/ffi_files/generate-ios-source-and-headers.py
 
 cd kivy-ios
 make all

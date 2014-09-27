@@ -1,0 +1,26 @@
+make script directory
+
+make separate projects
+
+create_xcode will take project/folder name to build separate projects
+
+
+
+add script to download libs, or check for them
+
+add script to make buildozer build of projects
+
+
+add blog posts for topics:
+    ios simulator
+    avocarrrot interstitials ios/android
+    iad banner ios
+    admob banner android
+
+4 projects:
+    ios sim example
+    iad banner ios
+    admob banner android
+    avocarrot interstitials ios/android combined
+
+look into comment systems you can add to your blog/no just use github issues
