@@ -14,12 +14,25 @@ Run this command to setup kivy ios with simulator support. It will take a while 
 ## Projects
 
 
+### Virtualenv and kivy-ios fork
+
+I use virtualenv to setup my python environment, and use my own kivy-ios fork to build these apps for ios. After downloading the project, use the following commands for the best results to setup your environment.
+
+	virtualenv env
+	./env/bin/pip install Cython==0.20.2 pillow jinja2
+	./env/bin/pip install hg+http://bitbucket.org/pygame/pygame
+	./env/bin/pip install kivy
+
+Make sure everything installed properly before continuing.
+
+
 #### hello-kivy (use with ios simulator)
 
 A basic kivy app, to test your kivy installation and attempt to build for ios simluator. 
 
-After setting up kivy-ios, run this command:
+After setting up kivy-ios, run these commands:
 
+    . ./env/bin/activate
     bash hello-kivy/init-xcode.sh
 
 You can now open the created xcode project and run the app in the simluator!
