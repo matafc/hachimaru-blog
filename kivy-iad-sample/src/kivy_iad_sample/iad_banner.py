@@ -9,7 +9,7 @@ class IadBanner():
 
         def __init__(self):
             ADBannerView = autoclass('ADBannerView')
-            self.view = autoclass('UIApplication').sharedApplication().keyWindow.rootViewController.view()
+            self.view = autoclass('UIApplication').sharedApplication().keyWindow.rootViewController().view()
             self.adView = ADBannerView.alloc().initWithFrame_(self.get_frame())
             self.adView.setDelegate_(self)
             Window.bind(size=self.win_size_change)
