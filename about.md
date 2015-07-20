@@ -11,9 +11,13 @@ Hachimaru is a twist on traditional match 3 games made with [Kivy](http://kivy.o
 Play until you run out of moves! Try to beat your highscore!
 
 ####Groups Mode
-	
+
 Match 30 of 4 material types!
 
 ####Timed Mode
 
 Beat the clock, then beat your best time!
+
+[Hachimaru on iTunes](https://itunes.apple.com/us/app/hachimaru/id913834312?ls=1&mt=8 "Hachimaru on iTunes")
+
+[Hachimaru on Google Play](https://play.google.com/store/apps/details?id=com.frankmata.hachimarumatch "Hachimaru match on Google Play")
